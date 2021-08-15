@@ -1,0 +1,23 @@
+Templates allow to personalize web pages for the user.
+
+this is one Templates
+
+----------------------------
+Dear {{Name}},
+
+Ar you tired of high electric bills?
+We haev noticed that your house at ......
+-------------------------------------------------
+
+This gets converted to like below for every name in our database.
+-------------------------------------------
+Dear Mr. Jones,
+
+Ar you tired of high electric bills?
+We haev noticed that your house at ......
+-----------------------------------------------
+Dear Mr.Smith,
+
+Ar you tired of high electric bills?
+We haev noticed that your house at ......
+----------------------------------------------------

@@ -16,8 +16,8 @@ func (m hotdog) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	var d hotdog
+	var d hotdog // Any value of type hotdog is now also a value of type interface.
 	// Anything that ocmes in the port 8080 will be handled by "d"
-	http.ListenAndServe(":8086", d) // ListenAndServe is jsut a basic version of what we saw with TCP in Section-3
+	http.ListenAndServe(":8086", d) // ListenAndServe is just a basic version of what we saw with TCP in Section-3
 
 }

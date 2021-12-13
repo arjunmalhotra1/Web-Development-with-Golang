@@ -1,0 +1,23 @@
+{{template "header"}}
+<!-- We use multipart/form-data when we want the user to be able to upload the file -->
+<!-- check the image to see how the data comes through in multipart/form-data -->
+<form method="POST" enctype="multipart/form-data">
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" name="first">
+    <br>
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" name="last">
+    <br>
+    <label for="sub">Subscribed</label>
+    <input type="checkbox" id="sub" name="subscribe">
+    <br>
+    <input type="submit">
+</form>
+
+<br>
+<!-- We say in our template to put data here if data is present -->
+{{if .}}
+<h1> BODY: {{.}} </h1>
+{{end}}
+
+{{template "footer"}}

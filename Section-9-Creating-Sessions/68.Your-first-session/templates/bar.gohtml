@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> BAR </title>
+</head>
+<body>
+
+<h1> Welcome to the bar. What can I get you to drink? </h1>
+
+<!-- These fields({{.UserName}}, {{.First}} and {{.Last}}) 
+are being mapped to the user struct in the main.go
+So when I had "Username" instead of "UserName" this code broke -->
+{{if .First}}
+USER NAME {{.UserName}}<br>
+FIRST {{.First}}<br>
+LAST {{.Last}}<br>
+{{end}}
+</body>
+</html>

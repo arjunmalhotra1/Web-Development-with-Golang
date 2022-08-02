@@ -40,18 +40,20 @@ func c(res http.ResponseWriter, req *http.Request) {
 func main() {
 	// http.HandleFunc("/dog", d)
 	// http.HandleFunc("/cat", c)
-	// To maek it work with http.handle?
+	// To make it work with http.handle?
 	// http.handle wants a handler.
 	// handler is anything that implements
 	// ServeHTTP(w ResponseWriter, r *Request)
-	// HandlerFunc has the ServeHTTP method attached to it - https://pkg.go.dev/net/http#HandlerFunc.ServeHTTP
+	// HandlerFunc has the ServeHTTP method attached to it -
+	// https://pkg.go.dev/net/http#HandlerFunc.ServeHTTP
 	// which makes HandlerFunc a handler, which is what Handle wants.
 	// HandlerFunc's underlying type is - func(ResponseWriter, *Request)
-	// func 'd' and 'c' are the fucntions with the same parameters, which is
+	// func 'd' and 'c' are the functions with the same parameters, which is
 	// exactly the underlying type of HandlerFunc
-	// So we can use convert d and c to Handlerfunc.
+	// So we can use convert d and c to Handlerfunc. CONVERSION.
+	// we are converting d and c to type HandlerFunc.
 	// And HandlerFunc has the ServeHTTP method that means HandlerFunc is implementing handler interface
-	// which is what http.Handle wants as it's second argumnent.
+	// which is what http.Handle wants as it's second argument.
 	http.Handle("/dog", http.HandlerFunc(d))
 	http.Handle("/cat", http.HandlerFunc(c))
 

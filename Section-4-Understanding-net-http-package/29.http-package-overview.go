@@ -1,6 +1,6 @@
 https://github.com/GoesToEleven/golang-web-dev/tree/master/017_understanding-net-http-package
 
-type handler interface {
+type Handler interface {
 	ServeHTTP(ResponseWriter, *Request)
 }
 

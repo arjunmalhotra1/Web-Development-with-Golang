@@ -2,7 +2,7 @@
 // So if somebody logs in the server knows that this person is logged in and they do have access to view this information.
 // We will learn how to create state.
 // State of a digital logic or computer program is a technical term for all the stored information,
-// at a given instant in time, to whihc the circuit or the program has access to.
+// at a given instant in time, to which the circuit or the program has access to.
 // So if somebody is logged in, they have access to this certain information.
 
 // We will see using cookies, how to create a state.

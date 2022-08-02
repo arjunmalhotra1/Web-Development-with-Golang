@@ -24,7 +24,7 @@ func main() {
 	// This is to make it a little more elegant.
 	// Our net/https package in golang has something called "DefaultServeMux"
 	// ListenAndServe start an http server with a given address and handler.
-	// The handler is usually 'nil' whihc means that ListenAndServe will use the "DefaultServeMux"
+	// The handler is usually 'nil' which means that ListenAndServe will use the "DefaultServeMux"
 	// So instead of creating our own NewServeMux(), we pass nil to http.ListenAndServe() for the handler.
 	// mux := http.NewServeMux()
 	// mux.Handle("/dog/", d)

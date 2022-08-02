@@ -37,11 +37,12 @@ func main() {
 
 	mux := http.NewServeMux() // Returns pointer to ServeMux
 	mux.Handle("/dog/", d)
-	mux.Handle("/cat/", c)
+	mux.Handle("/cat", c)
 	// Note - We have "/dog/"
-	// because even if something comes like /dog/something/else it will still run the dog code.
+	// because even if something comes like /dog/something/else it will still run the dog handler code.
 	// Hence the last trailing '/'
 	// path: /cat/something/else will return a 404.
+	// Because we don't have a '/' after cat on line 40, the down line paths are not caught.
 
 	// Notice we pass in our mux as a handle since our mux has ServeHTTP(ResponseWriter, *Request)
 	http.ListenAndServe(":8086", mux)

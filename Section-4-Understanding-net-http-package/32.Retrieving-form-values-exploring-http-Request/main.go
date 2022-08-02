@@ -15,7 +15,7 @@ func (h hotdog) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 		log.Fatalln(err) // log the error and shut down the program in case of an error.
 	}
 	tpl.ExecuteTemplate(w, "index.gohtml", req.Form) // There is a field attached to the req(req) "Form".
-	// http.Request req is a struct in http packge. Here we are jsut saying "Give me my form".
+	// http.Request req is a struct in http package. Here we are just saying "Give me my form".
 	// Form in req struct is of type "url.Values" which is a map. This map takes a string and then returns a
 	// slice of string.
 }

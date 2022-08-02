@@ -9,7 +9,7 @@
 {{if .}} <!-- This means if there is Data the we will show the below code from <main>....</main>-->
 <main>
     <p><strong>variable names</strong> (identifiers) and <em> values </em>:</p>
-    {{range $key, $value := .}} <!-- I there is data then we will range over our key value pairs -->
+    {{range $key, $value := .}} <!-- If there is data then we will range over our key value pairs since "req.Form" that we apssed is a dictionary -->
         <p><strong>{{$key}}</strong></p>
         <ul>{{range $value}}<li><em>{{.}}</em></li>{{end}}</ul>
         <!-- we range over our value as our value is a slice of string -->

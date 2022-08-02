@@ -1,6 +1,6 @@
 // We will write a cookie ot the client's machine
-// Cleint makes a request back to our domain, COOKIES ARE DOMAIN SPECIFIC.
-// the browser/cleint will see, if there is a cookie specific to our domain.
+// Client makes a request back to our domain, COOKIES ARE DOMAIN SPECIFIC.
+// the browser/client will see, if there is a cookie specific to our domain.
 // Then the client wil send the cookie back to our domain, with the request.
 // func SetCookie(res ResponseWriter, cookie *Cookie)
 // type Cookie

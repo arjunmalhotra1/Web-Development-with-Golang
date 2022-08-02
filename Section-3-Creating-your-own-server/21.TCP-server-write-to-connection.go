@@ -3,7 +3,7 @@
 // formatted in a certain way. As when a request comes in that request is just text.
 // So if text is formatted in a certain way, if it is adhering to the HTTP (protocols are rules of communication)
 // So if the text that comes in to the TCP server adhere s to the HTTP,
-// then our servers will be able to process that text. The standards of a protocl are writtn in RFC-7230
+// Then our servers will be able to process that text. The standards of a protocol are written in RFC-7230
 // RFC - Request for comment. It is a document put out by the IETF - Internet engineering Task Force.
 package main
 
